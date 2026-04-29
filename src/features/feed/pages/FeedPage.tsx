@@ -9,10 +9,13 @@ export default function FeedPage() {
   }
 
   return (
-    <div className="mx-auto max-w-xl space-y-4">
-      {data?.map((post) => (
-        <PostCard key={post.id} post={post} />
-      ))}
-    </div>
+    <>
+      <div>voltar</div>
+      <div className="mx-auto max-w-xl space-y-4">
+        {data?.map((post) => (
+          <PostCard key={post.id} post={post} />
+        ))}
+      </div>
+    </>
   );
 }

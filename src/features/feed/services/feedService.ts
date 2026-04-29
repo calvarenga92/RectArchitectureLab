@@ -12,8 +12,8 @@ const mockPosts: Post[] = [
   },
    {
     id: "2",
-    author: "Claudio",
-    content: "Construindo um feed com React Query e arquitetura limpa.",
+    author: "Karina",
+    content: "Minha vidinha um feed com React Query e arquitetura limpa.",
     image: "https://picsum.photos/600/350",
     likes: 10,
     liked: false,

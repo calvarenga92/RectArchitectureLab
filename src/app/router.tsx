@@ -8,6 +8,8 @@ import FeedPage from "@/features/feed/pages/FeedPage";
 // import Architecture from "@/features/architecture-docs/Architecture";
 import { Hero } from "@/shell/layout/Hero";
 
+import HomePage from "@/features/home/pages/HomePage";
+
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -15,7 +17,7 @@ export const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Hero />, // ou Home futuramente
+        element: <HomePage />,
       },
       {
         path: "/feed",

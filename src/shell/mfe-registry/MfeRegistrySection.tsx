@@ -2,6 +2,7 @@ import { useMemo, useState } from "react";
 import { StatusBadge } from "@/design-system/components/StatusBadge";
 import { mfeRegistry } from "./mfeRegistry";
 import { classNames } from "@/shared/utils/classNames";
+import { Link } from "react-router-dom";
 
 export function MfeRegistrySection() {
   const [selected, setSelected] = useState(mfeRegistry[0]);
@@ -56,8 +57,17 @@ export function MfeRegistrySection() {
           </div>
 
           <aside className="rounded-3xl bg-white p-8 shadow-xl">
-            <div className="mb-5 inline-flex rounded-2xl bg-[#ff6a2a] p-4 text-white">
-              <Icon size={34} />
+            <div className="mb-5 flex items-center justify-between gap-4">
+              <div className="inline-flex rounded-2xl bg-[#ff6a2a] p-4 text-white">
+                <Icon size={34} />
+              </div>
+
+              <Link
+                to={selected.route}
+                className="rounded-xl bg-slate-950 px-4 py-3 text-xs font-black uppercase tracking-wide text-white transition hover:bg-[#ff6a2a]"
+              >
+                Abrir modulo
+              </Link>
             </div>
 
             <h3 className="text-3xl font-black text-slate-950">
